@@ -1,5 +1,5 @@
 html, body {
-background-color: #ff0000;
+background-color: #000000;
 background-image: url('background.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
@@ -15,10 +15,10 @@ left: 50%;
 top: 50%;
 margin: -75px 0 0 -75px;
 
-border: 10px solid #00ff37;
+border: 10px solid #696d6a;
 border-radius: 50%;
-border-top: 10px solid #00b7ff;
-border-left: 10px solid #ff00c8;
+border-top: 10px solid #3c3f3f;
+border-left: 10px solid #3c3f3f;
 width: 120px;
 height: 120px;
 animation: spin 1s linear infinite;

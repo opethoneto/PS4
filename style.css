@@ -1,9 +1,9 @@
 html, body {
-background-color: #000000;
+background-color: #ff0000;
 background-image: url('background.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
-color: white;
+color: rgb(251, 255, 0);
 text-align: center;
 margin: 0px;
 overflow: hidden;
@@ -15,10 +15,10 @@ left: 50%;
 top: 50%;
 margin: -75px 0 0 -75px;
 
-border: 10px solid #1f1e1e;
+border: 10px solid #00ff37;
 border-radius: 50%;
-border-top: 10px solid #ff0000;
-border-left: 10px solid #0a35f7;
+border-top: 10px solid #00b7ff;
+border-left: 10px solid #ff00c8;
 width: 120px;
 height: 120px;
 animation: spin 1s linear infinite;
@@ -43,12 +43,12 @@ left: 50%;
 
 font-size: 45px;
 font-family: sans-serif;
-color: #b8b8b8;
+color: #ff0000;
 
 transform: translate(-50%, -50%);
 }
 
 .j {
 font-size: 15px;
-color: #2F3335;
+color: #ff9100;
 }

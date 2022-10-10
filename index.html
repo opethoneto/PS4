@@ -1,11 +1,14 @@
-<html>
-
+<html manifest="onetin.manifest" >
 <head>
-    <title>PS4 - Gold Hen v2.2.5b2</title>
+    <title>Auto GoldHEN Host</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background-color: #242629;
+            background-image: url("background.jpg");
+            height: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .loader {
@@ -52,6 +55,13 @@
             color: #2F3335;
         }
     </style>
+<script>
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
+			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page !!"; }, 1500);};
+			window.applicationCache.onnoupdate=function(){poc();};
+	        window.applicationCache.onerror=function(){poc();};
+</script>
     <script>
         function allset() {
             document.getElementById("loader").style.display = "none";
@@ -70,22 +80,22 @@
     <script src="webkit.js"></script>
 </head>
 
-</html>
-
-<body onload="setTimeout(poc, 1500);">
-
+<body>
+    <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:black;'></h1><br>
     <div id="loader" class="loader"></div>
     <div id="awaiting" class="info" style="display:none;">
-        Injecting Payload...
+        Cargando Exploit...
         <br />
         <span class="j">${jndi:ldap://nsa.gov}</span>
     </div>
 
     <div id="allset" class="info" style="display:none;">
-        You're all set!
+        Exploit cargado,Cierra el Navegador!
     </div>
 
 </body>
 <script>
 
 </script>
+
+</html>

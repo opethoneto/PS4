@@ -1,7 +1,7 @@
-<html manifest="onetin.cache">
+<html manifest="oneto.cache">
     
 <head>
-    <title>Auto GoldHEN 2.3 Oneto</title>
+    <title>GoldHEN Host 2.3 --ONETO--</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body 
@@ -61,7 +61,7 @@
     </style>
      
      <script>
-        window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Cache de host iniciado!!";};
+        window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Cache del host iniciado!!";};
         window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
         window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Cache almacenado exitosamente!!";setTimeout(function(){document.getElementById("progress").innerHTML="Apaga el Internet & Abre de nuevo el navegador!!"; }, 1500);};
         window.applicationCache.onnoupdate=function(){setTimeout(webkitExploit,500);};

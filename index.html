@@ -9,15 +9,18 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            color:white;font-size: 50px;text-align:center;margin:0;overflow:hidden;
-            text-shadow: 30px;
+            color:gray;font-size: 45px;text-align:center;margin:0;overflow:hidden;
+            text-shadow: -3px 1px 0 black,
+                          1px -2px 0 black;
+            font-family: sans-serif;
+            text-transform: uppercase;
         }
 .info{position:relative;top:39%;}
 </style>
 </head>
 <body onload="setTimeout(webkitExploit,500);"><!--  -->
 <script src="exploit.js"></script>
-<div id="msgs" class="info">Ejecutando Exploit, Por favor Espera ...</div>
+<div id="msgs" class="info"><b>Ejecutando Exploit, Por Favor Espera...</b></div>
 <script>
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 </script>

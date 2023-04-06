@@ -1,9 +1,10 @@
 CACHE MANIFEST 
 # OnetoHost
 
-index.html
+
 cache.html
 exploit.js
 GoldHENv2.3.bin
-host.jpg
-host.gif
+index.html
+oneto.cache
+script.js
